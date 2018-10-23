@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flex</title>
+<style>
+.container {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	border: 1px solid hsl(120,50%,50%);	
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+	align-items: flex-start; 	
+	align-content: center;	
+	<!--flex-direction: row | row-reverse | column | column-reverse; !-->
+	<!--flex-wrap: nowrap | wrap | wrap-reverse;!-->
+	<!--justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;!-->
+	<!--align-items: flex-start | flex-end | center | baseline | stretch;!-->
+	<!--align-content: flex-start | flex-end | center | space-between | space-around | stretch;!-->
+}
+
+.items {
+	width: 20px;
+	height: 50px;
+	border: 1px solid black;
+	display: flex;
+}
+
+.item2 {
+	height: 100px;
+	border: 1px solid hsl(0, 100%, 50%);
+	align-self: flex-end;
+} 
+
+.item3 {
+	width: 50px;
+	height: auto;	
+	border: 1px solid hsl(240, 100%, 50%);
+	order: -1;
+} 
+
+
+.item4 {
+	width: 100px;
+	border: 1px solid hsl(300, 100%, 50%);
+	flex-grow: 1
+}
+
+span {
+	margin: auto;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="items item1">
+			<span>1</span>
+		</div>
+		<div class="items item2">
+			<span>2</span>
+		</div>
+		<div class="items item3">
+			<span>3</span>
+		</div>
+		<div class="items item4">
+			<span>4</span>
+		</div>
+		<div class="items item5">
+			<span>5</span>
+		</div>
+		<div class="items item1">
+			<span>1</span>
+		</div>
+		<div class="items item2">
+			<span>2</span>
+		</div>
+		<div class="items item3">
+			<span>3</span>
+		</div>
+		<div class="items item4">
+			<span>4</span>
+		</div>
+		<div class="items item5">
+			<span>5</span>
+		</div>
+	</div>
+</body>
+</html>
